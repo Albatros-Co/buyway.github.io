@@ -29,16 +29,15 @@
                     <form class="form-inline" method="post">
                         <div class="form-group">
                             <div style="max-width: 460px;">
-                                <h1 style="font-size: 18px;margin-top: 10px;margin-bottom: 10px;"><strong>Hello,</strong></h1><input class="form-control" type="text" placeholder="Your Name" style="margin-bottom: 10px;margin-right: 10px;font-size: 14px;" name="name"><input class="form-control" type="text" placeholder="Designation"
-                                    style="margin-right: 10px;margin-bottom: 10px;font-size: 14px;" name="designation"><input class="form-control" type="email" name="email" placeholder="Your Email" style="margin-right: 10px;margin-bottom: 10px;font-size: 14px;">
-                                <input
-                                    class="form-control" type="text" placeholder="Contact no." style="margin-right: 10px;margin-bottom: 10px;font-size: 14px;" name="contact">
-                                    <h1 style="font-size: 18px;margin-top: 10px;margin-bottom: 10px;"><strong>About your Organization</strong></h1><input class="form-control" type="text" placeholder="Organization / Company" style="margin-right: 10px;margin-bottom: 10px;font-size: 14px;" name="organization"><input class="form-control"
-                                        type="text" placeholder="Tell us about your organization ..." style="width: 372px;font-size: 14px;" name="address"><textarea class="form-control" placeholder="Tell us about your organization ..." style="width: 372px;font-size: 14px;"
-                                        name="about"></textarea></div>
+                                <h1 style="font-size: 18px;margin-top: 10px;margin-bottom: 10px;"><strong>Hello,</strong></h1><input class="form-control" type="text" id="name" placeholder="Your Name" style="margin-bottom: 10px;margin-right: 10px;font-size: 14px;" name="name" required=""><input class="form-control" type="text"
+                                    id="designation" name="designation" placeholder="Designation" style="margin-right: 10px;margin-bottom: 10px;font-size: 14px;" required=""><input class="form-control" type="email" id="email" placeholder="Your Email" style="margin-bottom: 10px;margin-right: 10px;font-size: 14px;"
+                                    name="email" required=""><input class="form-control" type="text" id="contact" placeholder="Contact no." style="margin-right: 10px;margin-bottom: 10px;font-size: 14px;" name="contact" required="">
+                                <h1 style="font-size: 18px;margin-top: 10px;margin-bottom: 10px;"><strong>About your Organization</strong></h1><input class="form-control" type="text" id="organization" placeholder="Organization / Company" style="margin-right: 10px;margin-bottom: 10px;font-size: 14px;" name="organization"
+                                    required=""><input class="form-control" type="text" id="address" placeholder="Address" style="margin-right: 10px;margin-bottom: 10px;font-size: 14px;" name="address"><textarea class="form-control" id="about" placeholder="Tell us about your organization ..."
+                                    style="width: 372px;font-size: 14px;" name="about"></textarea></div>
                         </div>
                     </form>
-                    <div style="margin-top: 40px;"><button class="btn btn-primary" type="submit" style="margin-right: 10px;">SEND<i class="fa fa-send" style="margin-left: 10px;"></i></button><button class="btn btn-light" type="button" data-dismiss="modal">CANCEL</button></div>
+                    <div style="margin-top: 40px;"><button class="btn btn-primary" id="sendbt" type="submit" style="margin-right: 10px;">SEND<i class="fa fa-send" style="margin-left: 10px;"></i></button><button class="btn btn-light" id="cancelbt" type="button" data-dismiss="modal">CANCEL</button></div>
                 </div>
             </div>
         </div>
@@ -151,16 +150,17 @@
         </div>
     </div>
     <div class="newsletter-subscribe" style="padding-top: 32px;">
-        <div class="container">
+        <div class="container" id="msg">
             <div class="intro">
                 <h2 class="text-center" style="margin-bottom: 16px;">Send us a message<a href="#" name="contactus"></a></h2>
                 <p class="text-center">Drop us a message below and we will get in touch in no time</p>
             </div>
             <form class="form-inline" method="post">
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"><textarea class="form-control" placeholder="You were saying..." style="padding-top: 10px;" name="message"></textarea></div>
-                <div class="form-group"><button class="btn btn-primary" type="submit">SEND<i class="fa fa-send" style="margin-left: 10px;"></i></button></div>
-            </form>
-        </div>
+                <div class="form-group"><input class="form-control" type="email" id="youremail" name="email" placeholder="Your Email"><textarea class="form-control" id="yourmsg" placeholder="You were saying..." style="padding-top: 10px;" name="message"></textarea></div>
+                <div
+                    class="form-group"><button class="btn btn-primary" id="msgbt" type="button">SEND<i class="fa fa-send" style="margin-left: 10px;"></i></button></div>
+        </form>
+    </div>
     </div>
     <div>
         <div class="container">
